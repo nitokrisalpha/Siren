@@ -19,7 +19,7 @@ $the_cat = get_the_category();
 ?>
 	<article class="post post-list-thumb <?php echo $class; ?>" itemscope="" itemtype="http://schema.org/BlogPosting">
 		<div class="post-thumb">
-			<a href="<?php the_permalink(); ?>" style="background-image: url(<?php echo $post_img; ?>);"></a>
+			<a href="<?php the_permalink(); ?>" ><img src="<?php echo $post_img; ?>" alt=""></a>
 		</div><!-- thumbnail-->
 		<div class="post-content-wrap">
 			<div class="post-content">
