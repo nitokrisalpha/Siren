@@ -122,7 +122,7 @@ html {
 
 body {
     margin: 0;
-    font: 300 17px miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font: 300 17px miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -363,7 +363,7 @@ h6 {
 
 p {
     margin-bottom: 1.5em;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 dfn,
@@ -387,7 +387,7 @@ blockquote:before {
     top: -50px;
     left: 12px;
     color: #ABABAB;
-    font-family: "SimHei",sans-serif;
+    font-family: "SimHei", sans-serif;
 }
 
 blockquote:after {
@@ -397,7 +397,7 @@ blockquote:after {
     top: -50px;
     right: -5px;
     color: #ABABAB;
-    font-family: "SimHei",sans-serif;
+    font-family: "SimHei", sans-serif;
 }
 
 blockquote p {
@@ -410,7 +410,7 @@ address {
 
 pre {
     background: #F8F8F8;
-    font: 15px/22px "microsoft jhenghei","Arial",Sans-Serif;
+    font: 15px/22px "microsoft jhenghei", "Arial", Sans-Serif;
     line-height: 1.6;
     margin-bottom: 1.6em;
     max-width: 100%;
@@ -454,18 +454,18 @@ html {
 
 * {
     box-sizing: border-box;
-/*outline: none;*/
+    /*outline: none;*/
 }
 
 *:before,
 *:after {
- /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
     box-sizing: inherit;
 }
 
 body {
     background: #fff;
- /* Fallback for when there is no custom background color defined. */
+    /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -516,9 +516,9 @@ dd {
 
 img {
     height: auto;
- /* Make sure images are scaled correctly. */
+    /* Make sure images are scaled correctly. */
     max-width: 100%;
- /* Adhere to container width. */
+    /* Adhere to container width. */
 }
 
 table {
@@ -543,7 +543,7 @@ input[type="submit"] {
     font-size: 0.75rem;
     line-height: 1;
     padding: .6em 1em .4em;
-/*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
+    /*text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);*/
 }
 
 button:hover,
@@ -640,9 +640,9 @@ textarea {
 a {
     color: royalblue;
     outline: none;
-    -webkit-transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
-    -moz-transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
-    transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
+    -webkit-transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
+    transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
 }
 
 a:visited {
@@ -671,24 +671,27 @@ a:active {
     display: block;
     margin: 0 auto;
     padding: 0 20px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 @keyframes fade-in {
-  
+
     0% {
         opacity: 0;
-    }/*初始状态 透明度为0*/  
+    }
+    /*初始状态 透明度为0*/
     40% {
         opacity: 0;
-    }/*过渡状态 透明度为0*/  
+    }
+    /*过渡状态 透明度为0*/
     100% {
         opacity: 1;
-    }/*结束状态 透明度为1*/
+    }
+    /*结束状态 透明度为1*/
 }
 
 @-webkit-keyframes fade-in {
-/*针对webkit内核*/  
+    /*针对webkit内核*/
     0% {
         opacity: 0;
     }
@@ -704,12 +707,13 @@ a:active {
 
 .wrapper {
     animation: fade-in;
-/*动画名称*/
+    /*动画名称*/
     animation-duration: 0.5s;
-/*动画持续时间*/
+    /*动画持续时间*/
     -webkit-animation: fade-in 0.5s;
-/*针对webkit内核*/
+    /*针对webkit内核*/
 }
+
 /*视频*/
 #bgvideo {
     position: absolute;
@@ -722,7 +726,7 @@ a:active {
     z-index: 0;
 }
 
-#video-btn,#video-add {
+#video-btn, #video-add {
     position: absolute;
     bottom: 3px;
     right: 5px;
@@ -739,7 +743,7 @@ a:active {
     animation: poi-face 10s linear infinite alternate;
 }
 
-#video-btn:hover,#video-add:hover {
+#video-btn:hover, #video-add:hover {
     opacity: 1;
 }
 
@@ -771,7 +775,7 @@ a:active {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 0;
     font-size: 18px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     -webkit-transition: .4s ease all;
     -moz-transition: .4s ease all;
     -o-transition: .4s ease all;
@@ -839,7 +843,7 @@ a:active {
     margin: auto;
     padding: 0;
     border: 0;
-    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
 }
 
 .pattern-center .cat-des {
@@ -899,7 +903,7 @@ a:active {
         height: 280px;
     }
 
-    .pattern-center h1.cat-title, 
+    .pattern-center h1.cat-title,
     .pattern-center h1.entry-title,
     .single-center .single-header h1.entry-title {
         font-size: 26px;
@@ -925,7 +929,7 @@ a:active {
     left: 0;
     top: 0;
     background: rgba(255, 255, 255, .98);
-    box-shadow: 0 0 1px rgba(0,0,0,.15)
+    box-shadow: 0 0 1px rgba(0, 0, 0, .15)
 }
 
 .gizle {
@@ -962,9 +966,9 @@ a:active {
     height: 40px;
     margin-top: 17px;
     opacity: .75;
-    -webkit-transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
-    -moz-transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
-    transition: color 0.2s ease-out,border 0.2s ease-out,opacity 0.2s ease-out;
+    -webkit-transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
+    transition: color 0.2s ease-out, border 0.2s ease-out, opacity 0.2s ease-out;
 }
 
 .site-title img:hover {
@@ -988,6 +992,7 @@ a:active {
 #mo-nav {
     display: none
 }
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -1142,7 +1147,6 @@ a:active {
 }
 
 
-
 /* Small menu. */
 
 /*--------------------------------------------------------------
@@ -1150,7 +1154,7 @@ a:active {
 --------------------------------------------------------------*/
 .site-main {
     padding: 40px 0 0;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .site-content {
@@ -1222,7 +1226,7 @@ a:active {
 
 .entry-title a {
     color: #504E4E;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .entry-title a:hover {
@@ -1236,7 +1240,7 @@ a:active {
     font-size: 12px;
     color: #989898;
     letter-spacing: 0;
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
 }
 
 .p-time i {
@@ -1253,8 +1257,8 @@ i.iconfont.hotpost {
     min-height: 60px;
     margin: 0 0 0 17%;
     font-size: 15px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
-    color: rgba(0,0,0,.66);
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
+    color: rgba(0, 0, 0, .66);
     letter-spacing: 0;
     line-height: 30px;
 }
@@ -1280,14 +1284,14 @@ i.iconfont.hotpost {
 
 .info-meta {
     margin-top: 10px;
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
     position: absolute;
     top: 20px;
     opacity: 0;
     padding-top: 8px;
     border-top: 1px solid #ddd;
-    -webkit-transform: translate3d(-150px,0,0);
-    transform: translate3d(-150px,0,0);
+    -webkit-transform: translate3d(-150px, 0, 0);
+    transform: translate3d(-150px, 0, 0);
     visibility: hidden;
     transition: .7s all ease;
     -webkit-transition: .6s all ease;
@@ -1312,13 +1316,13 @@ i.iconfont.hotpost {
     float: left;
 }
 
-.info-meta  a {
+.info-meta a {
     color: #B3B3B3
 }
 
-.post-list:hover  .info-meta {
-    -webkit-transform: translate3d(-230px,0,0);
-    transform: translate3d(-230px,0,0);
+.post-list:hover .info-meta {
+    -webkit-transform: translate3d(-230px, 0, 0);
+    transform: translate3d(-230px, 0, 0);
     opacity: 1;
     visibility: visible;
 }
@@ -1344,19 +1348,21 @@ i.iconfont.hotpost {
 .post-list-thumb {
     float: left;
     width: 100%;
-    height: auto;
+    height: 300px;
     position: relative;
     margin: 20px 0 80px;
-    padding: 40px;
-    border: 1px solid rgba(0,0,0,0.05);
-    background-color: #FFFFFF
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0 1px 20px -8px rgba(0, 0, 0, .5);
+    opacity: 1;
+    transition: .6s;
 }
 
 .post-list-thumb::before {
     content: '';
     width: 1px;
     height: 100px;
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0, 0, 0, 0.1);
     position: absolute;
     left: 0;
     right: 0;
@@ -1373,21 +1379,35 @@ i.iconfont.hotpost {
 
 .post-list-thumb a {
     color: #504E4E;
+    overflow: hidden;
 }
-.post-list-thumb img{
+
+.post-list-thumb img {
     transition: .6s;
 }
-.post-thumb:hover img{
+
+.post-list-thumb:hover {
+    -moz-box-shadow: 0 0 10px #000e14;
+    box-shadow: 0 0 10px #000e14;
+    -webkit-box-shadow: 0 0 10px #000e14;
+}
+
+.post-list-thumb img{
+    width: 100%;
+    height: 100%;
+}
+
+.post-list-thumb:hover img {
     transform: scale(1.1)
 }
 
 .post-list-thumb .post-title h3 {
-    word-break: break-all;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
+    word-wrap: break-word
 }
 
 .post-date,
@@ -1407,11 +1427,13 @@ i.iconfont.hotpost {
 }
 
 .post-thumb a {
-    height: 260px;
+    height: 300px;
     position: relative;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
+    border-radius: 0 10px 10px 0;
 }
 
 .post-content-wrap {
@@ -1420,7 +1442,8 @@ i.iconfont.hotpost {
     float: right;
     padding-right: 30px;
     padding-left: 0;
-    width: 45%;
+    width: 40%;
+    margin: 20px 10px 0 10px
 }
 
 .float-content {
@@ -1431,7 +1454,7 @@ i.iconfont.hotpost {
     padding: 0;
     z-index: 500;
     background: #fff;
-    color: rgba(0,0,0,.66);
+    color: rgba(0, 0, 0, .66);
 }
 
 .float-content .post-text {
@@ -1454,6 +1477,10 @@ i.iconfont.hotpost {
 
 .post-list-thumb-left .post-thumb {
     float: left;
+}
+
+.post-list-thumb-left .post-thumb a{
+    border-radius: 10px 0 0 10px;
 }
 
 @media (max-width: 768px) {
@@ -1529,7 +1556,7 @@ i.iconfont.hotpost {
     text-align: right;
     margin-bottom: 10px;
     margin-top: -15px;
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
 }
 
 .s-content {
@@ -1549,6 +1576,7 @@ i.iconfont.hotpost {
 .post-status {
     margin-bottom: 80px;
 }
+
 /*--------------------------------------------------------------
 # pagenav
 --------------------------------------------------------------*/
@@ -1596,7 +1624,7 @@ i.iconfont.hotpost {
     text-align: center;
     font-size: 13px;
     color: #B9B9B9;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .site-info a {
@@ -1624,7 +1652,7 @@ i.iconfont.hotpost {
 }
 
 .footer-device {
-/*text-transform: uppercase;*/
+    /*text-transform: uppercase;*/
 }
 
 .site-statistics {
@@ -1653,7 +1681,7 @@ i.iconfont.hotpost {
     margin-left: 0;
 }
 
-.entry-content ol li , .entry-content ul li {
+.entry-content ol li, .entry-content ul li {
     padding: 8px 0;
 }
 
@@ -1685,9 +1713,9 @@ i.iconfont.hotpost {
     background: #eee;
     color: #E67474;
     word-break: break-word;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     padding: 2px;
-/*border: 1px dashed #ddd;*/
+    /*border: 1px dashed #ddd;*/
     text-shadow: none;
 }
 
@@ -1726,7 +1754,7 @@ h1.entry-title {
     content: '...';
     display: inline-block;
     margin-left: .6em;
-    color: rgba(0,0,0,.8);
+    color: rgba(0, 0, 0, .8);
     position: relative;
     top: -30px;
     font-size: 28px;
@@ -1772,7 +1800,7 @@ h1.page-title {
     padding: 10px 15px;
     color: #828282;
     margin-bottom: 30px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 h1.page-title.mb- {
@@ -1845,7 +1873,7 @@ h1.page-title.mb- {
     font-size: 13px;
     color: #B3B3B3;
     text-transform: uppercase;
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif
 }
 
 .post-tags a {
@@ -1941,7 +1969,7 @@ color: #FF4646;
     transition: opacity .1s ease-out
 }
 
-.post-share:hover .show-share , .post-share:hover .sharehidden {
+.post-share:hover .show-share, .post-share:hover .sharehidden {
     opacity: 1;
     display: inline-block;
 }
@@ -1990,7 +2018,7 @@ color: #FF4646;
 }
 
 .post-squares .category {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 10px;
     padding: 7px 15px;
     text-transform: uppercase;
@@ -2000,7 +2028,7 @@ color: #FF4646;
 }
 
 .post-squares h3 {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
@@ -2025,7 +2053,7 @@ color: #FF4646;
 }
 
 .post-squares .label {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 13px;
     display: block;
     text-transform: uppercase;
@@ -2178,7 +2206,7 @@ color: #FF4646;
 }
 
 .author-profile .meta h3 a {
-    font-family: din,'Hiragino Sans GB','Microsoft Yahei',Arial,sans-serif;
+    font-family: din, 'Hiragino Sans GB', 'Microsoft Yahei', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
@@ -2267,7 +2295,7 @@ h3#comments-list-title {
     padding: 12px 25px;
     z-index: 10000;
     margin-top: -4px;
-}   
+}
 
 /*--------------------------------------------------------------
 # Alignments
@@ -2376,6 +2404,7 @@ h3#comments-list-title {
 span.edit-link {
     display: none;
 }
+
 /*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
@@ -2383,6 +2412,7 @@ span.edit-link {
 .archive .format-aside .entry-title {
     display: none;
 }
+
 /*--------------------------------------------------------------
 ## 清除浮动
 --------------------------------------------------------------*/
@@ -2403,7 +2433,7 @@ span.edit-link {
 .works-entry {
     float: left;
     margin-bottom: 8px;
-/* display: inline-block; */
+    /* display: inline-block; */
 }
 
 .works-main {
@@ -2501,7 +2531,7 @@ h1.works-title {
 --------------------------------------------------------------*/
 
 #archives-temp {
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     margin-top: 50px;
     margin-bottom: 100px;
 }
@@ -2613,7 +2643,7 @@ h1.cat-title {
 }
 
 header.page-header {
-/* margin: 0 auto; */
+    /* margin: 0 auto; */
     position: relative;
     text-align: center;
     margin-bottom: 50px;
@@ -2625,7 +2655,7 @@ header.page-header {
 --------------------------------------------------------------*/
 
 .links {
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     margin-bottom: 80px
 }
 
@@ -2713,11 +2743,11 @@ span.sitename {
 
 span.linkss-title {
     font-size: 25px;
-/* margin: 0 auto; */
+    /* margin: 0 auto; */
     text-align: center;
     display: block;
     margin: 50px 0 30px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     letter-spacing: 5px;
 }
 
@@ -2741,7 +2771,7 @@ nav#comments-navi {
     margin: 0 auto;
     max-width: 860px;
     width: 100%;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     color: #9A9A9A;
 }
 
@@ -2809,7 +2839,7 @@ a.page-numbers {
     width: 100%;
     max-width: 860px;
     margin: 0 auto;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .comnav a {
@@ -2854,10 +2884,10 @@ a.page-numbers {
 }
 
 .comment .body {
-    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
     line-height: 32px;
     color: #63686d;
-    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
 }
 
 .comment .body p {
@@ -2934,7 +2964,7 @@ border-bottom: 20px solid #FFFFFF;
 }*/
 
 .comment .commeta {
-    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
     font-size: 16px;
     overflow: hidden;
     margin-bottom: 5px;
@@ -2943,15 +2973,15 @@ border-bottom: 20px solid #FFFFFF;
 }
 
 .comment .left {
-/*float: left; */
+    /*float: left; */
 }
 
 .comment .right {
-/*float: right; */
+    /*float: right; */
 }
 
 .comment .comment-reply-link {
-    font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,STHeiti,WenQuanYi Micro Hei,Helvetica,Arial,sans-serif;
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial, sans-serif;
     font-size: 12px;
     display: block;
     margin-left: 10px;
@@ -2988,7 +3018,7 @@ border-bottom: 20px solid #FFFFFF;
     font-size: 12px;
     letter-spacing: 0px;
     text-transform: none;
-    color: rgba(0,0,0,.35);
+    color: rgba(0, 0, 0, .35);
 }
 
 .comment .info .useragent-info img {
@@ -3005,7 +3035,7 @@ border-bottom: 20px solid #FFFFFF;
 }
 
 .comment h4 {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 24px;
     font-weight: 400;
     margin: 0;
@@ -3107,7 +3137,7 @@ border-bottom: 20px solid #FFFFFF;
 }
 
 .comment-respond textarea, .comment-respond input {
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     font-size: 14px;
     float: left;
     width: 31.99%;
@@ -3137,7 +3167,7 @@ border-bottom: 20px solid #FFFFFF;
 
 .comment-respond textarea {
     display: block;
-    font-family: "microsoft jhenghei","Arial",Sans-Serif;
+    font-family: "microsoft jhenghei", "Arial", Sans-Serif;
     float: none;
     width: 100%;
     height: 180px;
@@ -3234,7 +3264,7 @@ border-bottom: 20px solid #FFFFFF;
     background: none;
 }
 
-.notification i, 
+.notification i,
 .comment-respond .logged-in-as i {
     margin-right: 10px;
     font-size: 16px;
@@ -3271,7 +3301,7 @@ border-bottom: 20px solid #FFFFFF;
     cursor: pointer;
     color: #555;
     font-size: 14px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .siren-checkbox-label input {
@@ -3287,7 +3317,7 @@ border-bottom: 20px solid #FFFFFF;
 
 .siren-checkbox-radioInput {
     background-color: #fff;
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 100%;
     display: inline-block;
     height: 18px;
@@ -3324,7 +3354,7 @@ border-bottom: 20px solid #FFFFFF;
 top-features
 */
 
-h1.fes-title , h1.main-title {
+h1.fes-title, h1.main-title {
     color: #666;
     font-size: 16px;
     font-weight: 400;
@@ -3343,7 +3373,7 @@ h1.fes-title , h1.main-title {
     width: 100%;
     height: auto;
     margin-top: 55px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .top-feature img {
@@ -3393,7 +3423,7 @@ li.feature-2 {
 .notice {
     padding: 20px;
     border: 1px dashed #E6E6E6;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     color: #969696;
     position: relative;
     display: inline-block;
@@ -3478,13 +3508,13 @@ li.feature-2 {
     z-index: -1;
 }
 
-@media (max-width:860px) {
+@media (max-width: 860px) {
     #centerbg {
         height: 300px;
         background-attachment: scroll;
     }
 
-    .focusinfo,#video-container {
+    .focusinfo, #video-container {
         display: none;
     }
 }
@@ -3499,8 +3529,8 @@ li.feature-2 {
     padding: 0 10px;
     top: 49.3%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     text-align: center;
     z-index: 99;
     -webkit-transition: .4s ease all;
@@ -3547,7 +3577,7 @@ li.feature-2 {
     background: rgba(0, 0, 0, 0.5);
     padding: 15px 25px;
     margin-top: 22px;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     letter-spacing: 0;
     line-height: 30px;
     border-radius: 50px;
@@ -3563,7 +3593,7 @@ li.feature-2 {
     margin-left: 10px;
     list-style: none;
     display: inline-block;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .top-social img {
@@ -3599,8 +3629,8 @@ li.feature-2 {
     background: rgba(0, 0, 0, 0.4);
     top: 40px;
     left: -40px;
-    -webkit-transform: translate3d(0,50px,0);
-    transform: translate3d(0,50px,0);
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
     opacity: 0;
 }
 
@@ -3615,8 +3645,8 @@ li.feature-2 {
 }
 
 .wechat:hover .wechatInner {
-    -webkit-transform: translate3d(0,10px,0);
-    transform: translate3d(0,10px,0);
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
     opacity: 1;
     visibility: visible;
 }
@@ -3679,7 +3709,7 @@ i.iconfont.js-toggle-search.iconsearch {
     height: 285px;
     top: 0;
     bottom: 0;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .search-form--modal .search-form__inner p {
@@ -3749,7 +3779,7 @@ i.iconfont.js-toggle-search.iconsearch {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .search-form input::-webkit-input-placeholder {
@@ -3783,7 +3813,7 @@ i.iconfont.js-toggle-search.iconsearch {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 .s-search i {
@@ -3864,8 +3894,6 @@ i.iconfont.js-toggle-search.iconsearch {
 }
 
 
-
-
 /*!
 * baguetteBox.js
 * @author  feimosi
@@ -3926,7 +3954,7 @@ i.iconfont.js-toggle-search.iconsearch {
     color: #eee;
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.8);
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 #baguetteBox-overlay .full-image:before {
@@ -4108,7 +4136,7 @@ Borrowed from http://tobiasahlin.com/spinkit/
 
 @-webkit-keyframes bounce {
 
-    0%,100% {
+    0%, 100% {
         -webkit-transform: scale(0);
         transform: scale(0);
     }
@@ -4121,7 +4149,7 @@ Borrowed from http://tobiasahlin.com/spinkit/
 
 @keyframes bounce {
 
-    0%,100% {
+    0%, 100% {
         -webkit-transform: scale(0);
         -moz-transform: scale(0);
         transform: scale(0);
@@ -4140,7 +4168,7 @@ Borrowed from http://tobiasahlin.com/spinkit/
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer {
- /* Theme Footer (when set to scrolling) */
+    /* Theme Footer (when set to scrolling) */
     display: none;
 }
 
@@ -4365,7 +4393,7 @@ object {
 *
 * download
 * 
-**/ 
+**/
 
 .download {
     color: #fff !important;
@@ -4397,24 +4425,24 @@ object {
     -o-transition: all 0.3s;
     transition: all 0.3s;
     opacity: 1;
-    -webkit-transform: translate(0,-105%);
-    transform: translate(0,-105%);
+    -webkit-transform: translate(0, -105%);
+    transform: translate(0, -105%);
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: rgba(255,255,255,1);
-    background-color: rgba(255,255,255,0.25);
+    border-bottom-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 .download::after {
     -webkit-transition-delay: 0.2s;
- /* Safari */
+    /* Safari */
     transition-delay: 0.2s;
 }
 
 .download:hover::before, .download:hover::after {
     opacity: 0;
-    -webkit-transform: translate(0,0);
-    transform: translate(0,0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 
 .download span {
@@ -4435,7 +4463,7 @@ i.iconfont.down {
     text-align: center;
     margin: 40px 0 80px;
     display: inline-block;
-    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
 }
 
 #pagination a {
@@ -4506,7 +4534,7 @@ i.iconfont.down {
         top: 160px !important
     }
 
-    .admin-login , .wesite-des {
+    .admin-login, .wesite-des {
         display: none
     }
 
@@ -4592,7 +4620,7 @@ i.iconfont.down {
         font-size: 14px
     }
 
-    .post-footer , .post-share , .post-like {
+    .post-footer, .post-share, .post-like {
         display: none
     }
 
@@ -4639,7 +4667,7 @@ i.iconfont.down {
     .site-title {
         font-size: 20px;
         margin-right: 10px;
-        font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+        font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     }
 
     .links ul li {
@@ -4681,7 +4709,7 @@ i.iconfont.down {
         display: none
     }
 
-    h3#comments-list-title , nav#comments-navi {
+    h3#comments-list-title, nav#comments-navi {
         width: 100%;
         padding: 0 6.39%;
         max-width: 1245px;
@@ -4716,7 +4744,7 @@ i.iconfont.down {
 
     .wrapper {
         transition-duration: 0.5s;
-/*transition-timing-function: linear;*/
+        /*transition-timing-function: linear;*/
         background-color: white;
         width: 100%;
         height: auto;
@@ -4729,7 +4757,7 @@ i.iconfont.down {
 
     .wrapper section {
         max-width: 600px;
-/*margin: 0 auto 60px auto;*/
+        /*margin: 0 auto 60px auto;*/
     }
 
     .wrapper section h1 {
@@ -4750,7 +4778,7 @@ i.iconfont.down {
 
     .openNav {
         transition-duration: 0.5s;
-/*transition-timing-function: swing;*/
+        /*transition-timing-function: swing;*/
         width: 100%;
         height: 50px;
         position: absolute;
@@ -4782,7 +4810,7 @@ i.iconfont.down {
     }
 
     .openNav .icon:before,
-.openNav .icon:after {
+    .openNav .icon:after {
         transition-duration: 0.5s;
         background-color: #333;
         position: absolute;
@@ -4805,7 +4833,7 @@ i.iconfont.down {
     }
 
     .openNav.open .icon:before,
-.openNav.open .icon:after {
+    .openNav.open .icon:after {
         top: 0;
     }
 
@@ -4831,7 +4859,7 @@ i.iconfont.down {
         display: block;
         overflow-x: hidden;
         overflow-y: auto;
-        font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+        font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     }
 
     #mo-nav .m-avatar {
@@ -4867,7 +4895,7 @@ i.iconfont.down {
         text-align: center;
         border-radius: 3px;
         outline: none;
-        font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+        font-family: miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     }
 
     #mo-nav ul {
@@ -4957,11 +4985,8 @@ i.iconfont.down {
 /*iconfont **/
 @font-face {
     font-family: "iconfont";
-  src: url('inc/fonts/iconfont.eot?t=1461591491'); /* IE9*/
-  src: url('inc/fonts/iconfont.eot?t=1461591491#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('inc/fonts/iconfont.woff?t=1461591491') format('woff'), /* chrome, firefox */
-  url('inc/fonts/iconfont.ttf?t=1461591491') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('inc/fonts/iconfont.svg?t=1461591491#iconfont') format('svg'); /* iOS 4.1- */
+    src: url('inc/fonts/iconfont.eot?t=1461591491'); /* IE9*/
+    src: url('inc/fonts/iconfont.eot?t=1461591491#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('inc/fonts/iconfont.woff?t=1461591491') format('woff'), /* chrome, firefox */ url('inc/fonts/iconfont.ttf?t=1461591491') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('inc/fonts/iconfont.svg?t=1461591491#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -5194,7 +5219,7 @@ i.iconfont.down {
 }
 
 
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -5204,14 +5229,14 @@ i.iconfont.down {
 #mo-nav::-webkit-scrollbar {
     width: 0px;
     opacity: 0;
-}  
+}
 
-/*定义滚动条轨道 内阴影+圆角*/  
+/*定义滚动条轨道 内阴影+圆角*/
 ::-webkit-scrollbar-track {
     background-color: #eee;
-}  
+}
 
-/*定义滑块 内阴影+圆角*/  
+/*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
     background-color: #69d2e7;
 }
@@ -5314,124 +5339,124 @@ i.iconfont.down {
 
 /*颤抖动画*/
 @keyframes poi-face {
-    2%,24%,80% {
-        -webkit-transform: translate(0,1.5px) rotate(1.5deg);
-        transform: translate(0,1.5px) rotate(1.5deg)
+    2%, 24%, 80% {
+        -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+        transform: translate(0, 1.5px) rotate(1.5deg)
     }
 
-    4%,68%,98% {
-        -webkit-transform: translate(0,-1.5px) rotate(-.5deg);
-        transform: translate(0,-1.5px) rotate(-.5deg)
+    4%, 68%, 98% {
+        -webkit-transform: translate(0, -1.5px) rotate(-.5deg);
+        transform: translate(0, -1.5px) rotate(-.5deg)
     }
 
-    38%,6% {
-        -webkit-transform: translate(0,1.5px) rotate(-1.5deg);
-        transform: translate(0,1.5px) rotate(-1.5deg)
+    38%, 6% {
+        -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+        transform: translate(0, 1.5px) rotate(-1.5deg)
     }
 
-    8%,86% {
-        -webkit-transform: translate(0,-1.5px) rotate(-1.5deg);
-        transform: translate(0,-1.5px) rotate(-1.5deg)
+    8%, 86% {
+        -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+        transform: translate(0, -1.5px) rotate(-1.5deg)
     }
 
-    10%,72% {
-        -webkit-transform: translate(0,2.5px) rotate(1.5deg);
-        transform: translate(0,2.5px) rotate(1.5deg)
+    10%, 72% {
+        -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+        transform: translate(0, 2.5px) rotate(1.5deg)
     }
 
-    12%,64%,78%,96% {
-        -webkit-transform: translate(0,-.5px) rotate(1.5deg);
-        transform: translate(0,-.5px) rotate(1.5deg)
+    12%, 64%, 78%, 96% {
+        -webkit-transform: translate(0, -.5px) rotate(1.5deg);
+        transform: translate(0, -.5px) rotate(1.5deg)
     }
 
-    14%,54% {
-        -webkit-transform: translate(0,-1.5px) rotate(1.5deg);
-        transform: translate(0,-1.5px) rotate(1.5deg)
+    14%, 54% {
+        -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+        transform: translate(0, -1.5px) rotate(1.5deg)
     }
 
     16% {
-        -webkit-transform: translate(0,-.5px) rotate(-1.5deg);
-        transform: translate(0,-.5px) rotate(-1.5deg)
+        -webkit-transform: translate(0, -.5px) rotate(-1.5deg);
+        transform: translate(0, -.5px) rotate(-1.5deg)
     }
 
-    18%,22% {
-        -webkit-transform: translate(0,.5px) rotate(-1.5deg);
-        transform: translate(0,.5px) rotate(-1.5deg)
+    18%, 22% {
+        -webkit-transform: translate(0, .5px) rotate(-1.5deg);
+        transform: translate(0, .5px) rotate(-1.5deg)
     }
 
-    20%,36%,46% {
-        -webkit-transform: translate(0,-1.5px) rotate(2.5deg);
-        transform: translate(0,-1.5px) rotate(2.5deg)
+    20%, 36%, 46% {
+        -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+        transform: translate(0, -1.5px) rotate(2.5deg)
     }
 
-    26%,50% {
-        -webkit-transform: translate(0,.5px) rotate(.5deg);
-        transform: translate(0,.5px) rotate(.5deg)
+    26%, 50% {
+        -webkit-transform: translate(0, .5px) rotate(.5deg);
+        transform: translate(0, .5px) rotate(.5deg)
     }
 
     28% {
-        -webkit-transform: translate(0,.5px) rotate(1.5deg);
-        transform: translate(0,.5px) rotate(1.5deg)
+        -webkit-transform: translate(0, .5px) rotate(1.5deg);
+        transform: translate(0, .5px) rotate(1.5deg)
     }
 
-    30%,40%,62%,76%,88% {
-        -webkit-transform: translate(0,-.5px) rotate(2.5deg);
-        transform: translate(0,-.5px) rotate(2.5deg)
+    30%, 40%, 62%, 76%, 88% {
+        -webkit-transform: translate(0, -.5px) rotate(2.5deg);
+        transform: translate(0, -.5px) rotate(2.5deg)
     }
 
-    32%,34%,66% {
-        -webkit-transform: translate(0,1.5px) rotate(-.5deg);
-        transform: translate(0,1.5px) rotate(-.5deg)
+    32%, 34%, 66% {
+        -webkit-transform: translate(0, 1.5px) rotate(-.5deg);
+        transform: translate(0, 1.5px) rotate(-.5deg)
     }
 
     42% {
-        -webkit-transform: translate(0,2.5px) rotate(-1.5deg);
-        transform: translate(0,2.5px) rotate(-1.5deg)
+        -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+        transform: translate(0, 2.5px) rotate(-1.5deg)
     }
 
-    44%,70% {
-        -webkit-transform: translate(0,1.5px) rotate(.5deg);
-        transform: translate(0,1.5px) rotate(.5deg)
+    44%, 70% {
+        -webkit-transform: translate(0, 1.5px) rotate(.5deg);
+        transform: translate(0, 1.5px) rotate(.5deg)
     }
 
-    48%,74%,82% {
-        -webkit-transform: translate(0,-.5px) rotate(.5deg);
-        transform: translate(0,-.5px) rotate(.5deg)
+    48%, 74%, 82% {
+        -webkit-transform: translate(0, -.5px) rotate(.5deg);
+        transform: translate(0, -.5px) rotate(.5deg)
     }
 
-    52%,56%,60% {
-        -webkit-transform: translate(0,2.5px) rotate(2.5deg);
-        transform: translate(0,2.5px) rotate(2.5deg)
+    52%, 56%, 60% {
+        -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+        transform: translate(0, 2.5px) rotate(2.5deg)
     }
 
     58% {
-        -webkit-transform: translate(0,.5px) rotate(2.5deg);
-        transform: translate(0,.5px) rotate(2.5deg)
+        -webkit-transform: translate(0, .5px) rotate(2.5deg);
+        transform: translate(0, .5px) rotate(2.5deg)
     }
 
     84% {
-        -webkit-transform: translate(0,1.5px) rotate(2.5deg);
-        transform: translate(0,1.5px) rotate(2.5deg)
+        -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+        transform: translate(0, 1.5px) rotate(2.5deg)
     }
 
     90% {
-        -webkit-transform: translate(0,2.5px) rotate(-.5deg);
-        transform: translate(0,2.5px) rotate(-.5deg)
+        -webkit-transform: translate(0, 2.5px) rotate(-.5deg);
+        transform: translate(0, 2.5px) rotate(-.5deg)
     }
 
     92% {
-        -webkit-transform: translate(0,.5px) rotate(-.5deg);
-        transform: translate(0,.5px) rotate(-.5deg)
+        -webkit-transform: translate(0, .5px) rotate(-.5deg);
+        transform: translate(0, .5px) rotate(-.5deg)
     }
 
     94% {
-        -webkit-transform: translate(0,2.5px) rotate(.5deg);
-        transform: translate(0,2.5px) rotate(.5deg)
+        -webkit-transform: translate(0, 2.5px) rotate(.5deg);
+        transform: translate(0, 2.5px) rotate(.5deg)
     }
 
-    0%,100% {
-        -webkit-transform: translate(0,0) rotate(0);
-        transform: translate(0,0) rotate(0)
+    0%, 100% {
+        -webkit-transform: translate(0, 0) rotate(0);
+        transform: translate(0, 0) rotate(0)
     }
 }
 
@@ -5482,7 +5507,7 @@ i.iconfont.down {
     outline: none;
     border-radius: 3px;
     font-size: 16px;
-    font: 300 14px miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    font: 300 14px miranafont, "Hiragino Sans GB", STXihei, "Microsoft YaHei", SimSun, sans-serif;
     -webkit-transition: .4s ease all;
     -moz-transition: .4s ease all;
     -o-transition: .4s ease all;
