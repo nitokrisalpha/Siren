@@ -18,6 +18,7 @@ while (have_posts()) : the_post();
         $post_img = get_bloginfo('template_url') . '/images/temp.jpg';
     }
     $the_cat = get_the_category();
+
     ?>
     <article class="post post-list-thumb <?php echo $class; ?>" itemscope="" itemtype="http://schema.org/BlogPosting">
         <div class="post-thumb">

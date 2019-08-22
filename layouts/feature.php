@@ -6,7 +6,7 @@
 
 ?>
 	<div class="top-feature">
-		<h1 class="fes-title"><?php echo akina_option('feature_title', '聚焦'); ?></h1>
+		<h1 class="fes-title"><?php echo akina_option('feature_title', 'Start'); ?></h1>
 		<div class="feature-content">
 			<li class="feature-1">
 				<a href="<?php echo akina_option('feature1_link', '#'); ?>" target="_blank"><div class="feature-title"><span class="foverlay"><?php echo akina_option('feature1_title', 'feature1'); ?></span></div><img src="<?php echo akina_option('feature1_img', ''); ?>"></a>

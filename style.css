@@ -1336,7 +1336,7 @@ i.iconfont.hotpost {
     margin-top: 20px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
     .site-main {
         padding: 15px 0 0;
     }
@@ -1353,7 +1353,7 @@ i.iconfont.hotpost {
     margin: 20px 0 80px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0 1px 15px -8px rgba(0, 0, 0, .5);
+    /*box-shadow: 0 1px 15px -8px rgba(0, 0, 0, .5);*/
     border: 1px solid rgba(0,0,0,.05);
     opacity: 1;
     transition: .6s;
@@ -1484,10 +1484,20 @@ i.iconfont.hotpost {
     border-radius: 10px 0 0 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .post-list-thumb {
         padding: 0;
         border: 0;
+        /*margin: 100px 0;*/
+    }
+
+    .float-content p {
+        height: auto;
+        display: block
+    }
+
+    .post-list-thumb-left .post-thumb a{
+        border-radius: 10px;
     }
 
     .post-thumb,
@@ -1501,13 +1511,15 @@ i.iconfont.hotpost {
     .post-list-thumb-left .post-content-wrap {
         text-align: left;
         margin: 0;
-        padding: 20px;
+        /*padding: 20px;*/
         float: none;
         box-shadow: none;
         border: 1px solid rgba(0, 0, 0, 0.05);
         border-top: 0;
     }
-
+    .post-list-thumb-left .post-thumb a{
+        border-radius: 10px;
+    }
     .float-content {
         box-shadow: none;
         padding: 0;
@@ -1515,18 +1527,22 @@ i.iconfont.hotpost {
     }
 
     .post-bottom {
-        text-align: right;
+        display: none;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .post-thumb a {
-        height: 210px;
+        height: 200px;
+        border-radius: 10px;
     }
 
     .float-content .post-text {
         font-size: 13px;
         margin-bottom: 1em;
+    }
+    .post-list-thumb-left .post-thumb a{
+        border-radius: 10px;
     }
 }
 
@@ -3556,7 +3572,7 @@ li.feature-2 {
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
-    transition: all ease 1s;
+    transition: all ease .5s;
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
     -o-transition: all ease 1s;
