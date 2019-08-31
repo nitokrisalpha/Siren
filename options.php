@@ -148,9 +148,9 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('展开导航菜单', 'options_framework_theme'),
-		'desc' => __('勾选开启，默认收缩', 'options_framework_theme'),
+		'desc' => __('勾选关闭，默认开启', 'options_framework_theme'),
 		'id' => 'shownav',
-		'std' => '0',
+		'std' => '1',
 		'type' => 'checkbox');
 
 	$options[] = array(
@@ -173,7 +173,7 @@ function optionsframework_options() {
 	$options[] = array(
 		'name' => __('首页文章风格', 'akina'),
 		'id' => 'post_list_style',
-		'std' => "standard",
+		'std' => "imageflow",
 		'type' => "radio",
 		'options' => array(
 			'standard' => __('标准', ''),
@@ -214,14 +214,14 @@ function optionsframework_options() {
 		'name' => __('博主描述', 'options_framework_theme'),
 		'desc' => __('一段自我描述的话', 'options_framework_theme'),
 		'id' => 'admin_des',
-		'std' => '公交车司机终于在众人的指责中将座位让给了老太太',
+		'std' => '有时间绝望的话，还不如去吃点好吃的去睡觉呢',
 		'type' => 'textarea');	
 
 	$options[] = array(
 		'name' => __('页脚信息', 'options_framework_theme'),
 		'desc' => __('页脚说明文字，支持HTML代码', 'options_framework_theme'),
 		'id' => 'footer_info',
-		'std' => '&copy; 2016',
+		'std' => '&copy; 2019',
 		'type' => 'textarea');
 
 	$options[] = array(

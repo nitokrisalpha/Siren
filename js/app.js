@@ -369,8 +369,8 @@ var home = location.href,
                 $('.site-header').removeClass('yya');
             }if(s > h1){
                 $('.site-header').addClass('yya');
-            }if(s > h2){
-                $('.site-header').addClass('gizle');
+            }
+            if(s > h2){
                 if(s > ss){
                     $('.site-header').removeClass('sabit');
                 }else{
@@ -378,7 +378,7 @@ var home = location.href,
                 }
                 ss = s;
             }
-        }); 
+        });
     },
 
     // Ajax加载文章

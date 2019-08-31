@@ -11,7 +11,7 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
+<hscrollTopead>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title itemprop="name"><?php global $page, $paged;wp_title( '-', true, 'right' );
@@ -49,11 +49,12 @@ if (akina_option('akina_meta') == true) {
 <?php wp_head(); ?>
 <script type="text/javascript">
 if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
-  alert('请抛弃万恶的IE系列浏览器吧。');
+  alert('本站未适配IE浏览器哦～');
 }
 </script>
-</head>
+</hscrollTopead>
 <body <?php body_class(); ?>>
+<div class="scrollbar" id="bar"></div>
 	<section id="main-container">
 		<?php 
 		if(!akina_option('head_focus')){ 
@@ -64,7 +65,7 @@ if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
 		</div>	
 		<?php } ?>
 		<div id="page" class="site wrapper">
-			<header class="site-header" role="banner">
+			<header class="site-header no-select" role="banner">
 				<div class="site-top">
 					<div class="site-branding">
 						<?php if (akina_option('akina_logo')){ ?>
