@@ -548,7 +548,7 @@ function optionsframework_options() {
 		'name' => __('聚焦图一', 'options_framework_theme'),
 		'desc' => __('尺寸257px*160px', 'options_framework_theme'),
 		'id' => 'feature1_img',
-		'std' => $imagepath.'/temp.jpg',
+		'std' => $imagepath.'/temp.png',
 		'type' => 'upload');
 
 	$options[] = array(
@@ -569,7 +569,7 @@ function optionsframework_options() {
 		'name' => __('聚焦图二', 'options_framework_theme'),
 		'desc' => __('尺寸257px*160px', 'options_framework_theme'),
 		'id' => 'feature2_img',
-		'std' => $imagepath.'/temp.jpg',
+		'std' => $imagepath.'/temp.png',
 		'type' => 'upload');
 
 	$options[] = array(
@@ -590,7 +590,7 @@ function optionsframework_options() {
 		'name' => __('聚焦图三', 'options_framework_theme'),
 		'desc' => __('尺寸257px*160px', 'options_framework_theme'),
 		'id' => 'feature3_img',
-		'std' => $imagepath.'/temp.jpg',
+		'std' => $imagepath.'/temp.png',
 		'type' => 'upload');
 
 	$options[] = array(

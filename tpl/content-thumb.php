@@ -15,7 +15,7 @@ while (have_posts()) : the_post();
         $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
         $post_img = $large_image_url[0];
     } else {
-        $post_img = get_bloginfo('template_url') . '/images/random/66460715_p0.jpg';
+        $post_img = get_bloginfo('template_url') . '/images/hd.png';
     }
     $the_cat = get_the_category();
 
