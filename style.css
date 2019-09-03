@@ -1395,11 +1395,11 @@ i.iconfont.hotpost {
 }
 
 .post-list-thumb:hover {
-    -moz-box-shadow: 0 0 10px #000e14;
-    box-shadow: 0 0 10px #000e14;
-    -webkit-box-shadow: 0 0 10px #000e14;
+    -moz-box-shadow: 0 0 10px rgba(16, 9, 13, 0.45);
+    box-shadow: 0 0 10px rgba(16, 9, 13, 0.45);
+    -webkit-box-shadow: 0 0 10px rgba(16, 9, 13, 0.45);
     height: 300px;
-    border-width: 0px;
+    border-width: 0;
 }
 
 .post-list-thumb img {
@@ -5270,8 +5270,8 @@ i.iconfont.down {
 }
 
 .cd-top:hover {
-    /*-webkit-animation: btn-pudding 2s linear;
-    animation: btn-pudding 2s linear;*/
+    -webkit-animation: btn-pudding 2s linear;
+    animation: btn-pudding 2s linear;
 }
 
 /*360度旋转*/

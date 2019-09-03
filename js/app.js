@@ -399,7 +399,7 @@ var home = location.href,
                         $("#pagination a").attr("href", nextHref);
                     } else {
                     // If there is no link, that is the last page, then remove the navigation
-                        $("#pagination").html("<span>Don't have more ...</span>");
+                        $("#pagination").html("<span>到底啦～～～</span>");
                     }
                 }
             });
