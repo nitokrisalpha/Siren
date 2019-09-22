@@ -49,7 +49,7 @@ if (akina_option('akina_meta') == true) {
 <?php wp_head(); ?>
 <script type="text/javascript">
 if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
-  alert('本站未适配IE浏览器哦～');
+  alert('本站未适配IE浏览器哦~~~');
 }
 </script>
 </hscrollTopead>
