@@ -5836,8 +5836,8 @@ i.iconfont.down {
     position: fixed;
     top: 0;
     height: 3px;
-    background: orange;
+    background-color: orange;
     transiton-property: width, background;
     transition-duration: 1s, 1s;
-    z-index: 9999;
+    z-index: 9999999;
 }
