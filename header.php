@@ -54,6 +54,7 @@ if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
 </script>
 </hscrollTopead>
 <body <?php body_class(); ?>>
+
 <div class="scrollbar" id="bar"></div>
 	<section id="main-container">
 		<?php 
@@ -61,11 +62,15 @@ if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
 		$filter = akina_option('focus_img_filter');
 		?>
 		<div class="headertop <?php echo $filter; ?>">
+
 			<?php get_template_part('layouts/imgbox'); ?>
 		</div>	
 		<?php } ?>
 		<div id="page" class="site wrapper">
 			<header class="site-header no-select" role="banner">
+<!--                <div class="progress">-->
+<!--                    <div class="bar"></div>-->
+<!--                </div>-->
 				<div class="site-top">
 					<div class="site-branding">
 						<?php if (akina_option('akina_logo')){ ?>

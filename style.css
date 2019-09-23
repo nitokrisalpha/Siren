@@ -922,7 +922,7 @@ a:active {
     transition: all .4s ease;
     position: fixed;
     z-index: 9999;
-    top: 0
+    top: 0px;
 }
 
 . {
@@ -940,12 +940,12 @@ a:active {
     position: fixed;
     left: 0;
     background-color: rgba(255, 255, 255, .95);
-    box-shadow: 0 0 15px rgba(0, 0, 0, .9)
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5)
 
 }
 
 .sabit {
-    top: 0;
+    top:0px;
     z-index: 9999;
 }
 
@@ -3836,7 +3836,7 @@ i.iconfont.js-toggle-search.iconsearch {
 
 .s-search input {
     font-size: 1rem;
-    background: #none;
+    /*background: none;*/
     padding: 12px 24px 12px 64px;
     width: 100%;
     outline: none;
@@ -5258,7 +5258,7 @@ i.iconfont.down {
 }
 
 #mo-nav::-webkit-scrollbar {
-    width: 0px;
+    width: 0;
     opacity: 0;
 }
 
@@ -5269,7 +5269,7 @@ i.iconfont.down {
 
 /*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
-    background-color: #69d2e7;
+    background: #800080;
 }
 
 .cd-top:hover {
@@ -5832,12 +5832,12 @@ i.iconfont.down {
 }
 
 /*!*进度条*!*/
-/*.scrollbar {*/
-/*    position: fixed;*/
-/*    top: 0;*/
-/*    height: 3px;*/
-/*    background: orange;*/
-/*    transiton-property: width, background;*/
-/*    transition-duration: 1s, 1s;*/
-/*    z-index: 99999*/
-/*}*/
+.scrollbar {
+    position: fixed;
+    top: 0;
+    height: 3px;
+    background: orange;
+    transiton-property: width, background;
+    transition-duration: 1s, 1s;
+    z-index: 9999;
+}

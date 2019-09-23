@@ -714,3 +714,34 @@ jQuery(document).ready(function($) {
             });
     });
 });
+//计算进度条宽度
+function scrollBar() {
+    if (document.body.clientWidth > 860) {
+        $(window).scroll(function () {
+            var s = $(window).scrollTop();
+            var a = $(document).height();
+            var b = $(window).height();
+            var result = parseInt(s / (a - b) * 100);
+            $("#bar").css("width", result + "%");
+            if (false) {
+                if (result >= 0 && result <= 19)
+                    $("#bar").css("background", "#cccccc");
+                if (result >= 20 && result <= 39)
+                    $("#bar").css("background", "#50bcb6");
+                if (result >= 40 && result <= 59)
+                    $("#bar").css("background", "#85c440");
+                if (result >= 60 && result <= 79)
+                    $("#bar").css("background", "#f2b63c");
+                if (result >= 80 && result <= 99)
+                    $("#bar").css("background", "#FF0000");
+                if (result == 100)
+                    $("#bar").css("background", "#5aaadb");
+            } else {
+                $("#bar").css("background", "orange");
+            }
+            $(".toc-container").css("height", $(".site-content").outerHeight());
+            $(".skin-menu").removeClass('show');
+        });
+    }
+}
+scrollBar();
