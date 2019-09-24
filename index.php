@@ -38,7 +38,7 @@ if ( akina_option( 'top_feature' ) == '1' ) {
 
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
-            <h1 class="main-title"><i class="fas fa-fan ran-rot" id="fan"></i> POSTS</h1>
+            <h1 class="main-title"><i class="fas fa-fan" id="fan"></i> POSTS</h1>
 			<?php
 			if ( have_posts() ) :
 

@@ -676,12 +676,12 @@ function optionsframework_options() {
 		'std' => '0',
 		'type' => 'checkbox');
 
-	$options[] = array(
-		'name' => __('开启多说插件支持', 'options_framework_theme'),
-		'desc' => __('如果使用多说插件，请勾选此项', 'options_framework_theme'),
-		'id' => 'general_disqus_plugin_support',
-		'std' => '0',
-		'type' => 'checkbox');
+//	$options[] = array(
+//		'name' => __("开启多说插件支持", 'options_framework_theme'),
+//		'desc' => __('如果使用多说插件，请勾选此项', 'options_framework_theme'),
+//		'id' => 'general_disqus_plugin_support',
+//		'std' => '0',
+//		'type' => 'checkbox');
 
 	$options[] = array(
 		'name' => __('开启Prism代码高亮支持', 'options_framework_theme'),

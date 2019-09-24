@@ -933,7 +933,7 @@ a:active {
 }
 
 .site-header:hover {
-    background-color:#fff;
+    background-color: #fff;
 }
 
 .yya {
@@ -945,7 +945,7 @@ a:active {
 }
 
 .sabit {
-    top:0px;
+    top: 0px;
     z-index: 9999;
 }
 
@@ -1497,6 +1497,7 @@ i.iconfont.hotpost {
     .post-list-thumb::before {
         width: 0;
     }
+
     .post-list-thumb {
         padding: 0;
         border: 0;
@@ -1520,12 +1521,12 @@ i.iconfont.hotpost {
 
     .post-content-wrap,
     .post-list-thumb-left .post-content-wrap {
-        padding-left:10px ;
+        padding-left: 10px;
         text-align: left;
         margin: 0;
         float: none;
         box-shadow: none;
-        border-bottom: 1px solid rgba(0,0,0,.2);
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
 
     }
 
@@ -5842,6 +5843,49 @@ i.iconfont.down {
     z-index: 9999999;
 }
 
-#fan{
-    transition: 2s;
+#fan {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 3s linear infinite;
+    -moz-animation: rotate 3s linear infinite;
+    -o-animation: rotate 3s linear infinite;
+    animation: rotate 3s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(0deg)
+    }
+    to {
+        -o-transform: rotate(359deg)
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(359deg)
+    }
 }

@@ -770,12 +770,3 @@ function add_copyright() {
 }
 
 add_copyright();
-
-var rotation = function (){
-    $('#img4').rotate({
-        angle: 0,
-        animateTo: 360,
-        callback: rotation
-    });
-}
-rotation();
