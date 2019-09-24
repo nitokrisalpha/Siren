@@ -713,6 +713,7 @@ jQuery(document).ready(function($) {
                 $i.remove();
             });
     });
+
 });
 //计算进度条宽度
 function scrollBar() {
@@ -737,7 +738,7 @@ function scrollBar() {
                 if (result == 100)
                     $("#bar").css("background", "#5aaadb");
             } else {
-                $("#bar").css("background", "orange");
+                // $("#bar").css("background", "orange");
             }
             $(".toc-container").css("height", $(".site-content").outerHeight());
             $(".skin-menu").removeClass('show');
@@ -745,3 +746,36 @@ function scrollBar() {
     }
 }
 scrollBar();
+
+function add_copyright() {
+    document.body.addEventListener("copy", function (e) {
+        if (window.getSelection().toString().length > 30 && mashiro_option.clipboardCopyright) {
+            setClipboardText(e);
+        }
+        addComment.createButterbar("复制成功！<br>Copied to clipboard successfully!", 1000);
+    });
+
+    function setClipboardText(event) {
+        event.preventDefault();
+        var htmlData = "# 商业转载请联系作者获得授权，非商业转载请注明出处。<br>" + "# For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source.<br>" + "# 协议(License)：署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)<br>" + "# 作者(Author)：" + mashiro_option.author_name + "<br>" + "# 链接(URL)：" + window.location.href + "<br>" + "# 来源(Source)：" + mashiro_option.site_name + "<br><br>" + window.getSelection().toString().replace(/\r\n/g, "<br>");
+        ;
+        var textData = "# 商业转载请联系作者获得授权，非商业转载请注明出处。\n" + "# For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source.\n" + "# 协议(License)：署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)\n" + "# 作者(Author)：" + mashiro_option.author_name + "\n" + "# 链接(URL)：" + window.location.href + "\n" + "# 来源(Source)：" + mashiro_option.site_name + "\n\n" + window.getSelection().toString().replace(/\r\n/g, "\n");
+        if (event.clipboardData) {
+            event.clipboardData.setData("text/html", htmlData);
+            event.clipboardData.setData("text/plain", textData);
+        } else if (window.clipboardData) {
+            return window.clipboardData.setData("text", textData);
+        }
+    }
+}
+
+add_copyright();
+
+var rotation = function (){
+    $('#img4').rotate({
+        angle: 0,
+        animateTo: 360,
+        callback: rotation
+    });
+}
+rotation();

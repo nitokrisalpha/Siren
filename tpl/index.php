@@ -1,5 +1,4 @@
 <?php
-    //$t_url=$_GET['url']; //此代码无法支持带请求参数的目的地址，已弃用！
     $t_url = preg_replace('/^url=(.*)$/i','$1',$_SERVER["QUERY_STRING"]); //这个支持
     if(!empty($t_url)) {
         preg_match('/(http|https):\/\//',$t_url,$matches);
@@ -12,13 +11,13 @@
             $url='http://'.$t_url;
             $title='页面加载中,请稍候...';
         } else {
-            $url='http://liuyanzhao.com/';
+            $url='http://nitokrisalpha.cn/';
             $title='参数错误，正在返回首页...';
         }
     }
     } else {
         $title='参数缺失，正在返回首页...';
-        $url='http://liuyanzhao.com/';
+        $url='http://nitokrisalpha.cn/';
     }
     ?>
     <html>

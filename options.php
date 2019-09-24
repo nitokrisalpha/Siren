@@ -114,7 +114,7 @@ function optionsframework_options() {
 	$options[] = array(
         'name' => __("主题风格", 'akina'),
         'id' => 'theme_skin',
-        'std' => "#FE9600",
+        'std' => "#ff00ee",
         'desc' => __('自定义主题颜色', ''),
         'type' => "color"
     );
@@ -540,7 +540,7 @@ function optionsframework_options() {
 		'name' => __('聚焦标题', 'options_framework_theme'),
 		'desc' => __('默认为聚焦，你也可以修改为其他，当然不能当广告用！不允许！！', 'options_framework_theme'),
 		'id' => 'feature_title',
-		'std' => '聚焦',
+		'std' => 'FOCUS',
 		'class' => 'mini',
 		'type' => 'text');	
 		
@@ -613,12 +613,12 @@ function optionsframework_options() {
 		'name' => __('其他', 'options_framework_theme'),
 		'type' => 'heading' );
 
-	$options[] = array(
-		'name' => __('开启PJAX局部刷新', 'options_framework_theme'),
-		'desc' => __('原理与Ajax相同', 'options_framework_theme'),
-		'id' => 'poi_pjax',
-		'std' => '0',
-		'type' => 'checkbox');
+//	$options[] = array(
+//		'name' => __('开启PJAX局部刷新', 'options_framework_theme'),
+//		'desc' => __('原理与Ajax相同', 'options_framework_theme'),
+//		'id' => 'poi_pjax',
+//		'std' => '0',
+//		'type' => 'checkbox');
 
 	$options[] = array(
 		'name' => __('开启公告', 'options_framework_theme'),

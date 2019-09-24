@@ -5269,7 +5269,7 @@ i.iconfont.down {
 
 /*定义滑块 内阴影+圆角*/
 ::-webkit-scrollbar-thumb {
-    background: #800080;
+    background-color: #69d2e7
 }
 
 .cd-top:hover {
@@ -5836,8 +5836,12 @@ i.iconfont.down {
     position: fixed;
     top: 0;
     height: 3px;
-    background-color: orange;
+    /*background-color: orange;*/
     transiton-property: width, background;
     transition-duration: 1s, 1s;
     z-index: 9999999;
+}
+
+#fan{
+    transition: 2s;
 }

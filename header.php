@@ -11,6 +11,9 @@
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+<head>
+    <script src="https://kit.fontawesome.com/55e4d50308.js" crossorigin="anonymous"></script>
+</head>
 <hscrollTopead>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,9 +56,10 @@ if (!!window.ActiveXObject || "ActiveXObject" in window) { //is IE?
 }
 </script>
 </hscrollTopead>
+
 <body <?php body_class(); ?>>
 
-<div class="scrollbar" id="bar"></div>
+<div class="scrollbar" id="bar" style="background-color:<?php echo akina_option('theme_skin'); ?>"></div>
 	<section id="main-container">
 		<?php 
 		if(!akina_option('head_focus')){ 
