@@ -6,20 +6,23 @@
  *
  * @package Akina
  */
+//function custom_short_excerpt($excerpt){
+//	return substr($excerpt, 0, 120);
+//}
+//add_filter('the_excerpt', 'custom_short_excerpt');
+$i=0; while ( have_posts() ) : the_post(); $i++;
+	$class = ($i%2 == 0) ? 'post-list-thumb-left' : ''; // 如果为偶数
+	if(has_post_thumbnail()){
+		$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'large');
+		$post_img = $large_image_url[0];
+	}else{
+		$post_img = DEFAULT_FEATURE_IMAGE();
+	}
+	$the_cat = get_the_category();
+// 摘要字数限制
 
-$i = 0;
-while (have_posts()) : the_post();
-    $i++;
-    $class = ($i % 2 == 0) ? 'post-list-thumb-left' : ''; // 如果为偶数
-    if (has_post_thumbnail()) {
-        $large_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
-        $post_img = $large_image_url[0];
-    } else {
-        $post_img = get_bloginfo('template_url') . '/images/hd.png';
-    }
-    $the_cat = get_the_category();
-
-    ?>
+//add_filter( 'excerpt_length', 'custom_excerpt_length', 120 );
+	?>
     <article class="post post-list-thumb <?php echo $class; ?>" itemscope="" itemtype="http://schema.org/BlogPosting">
         <div class="post-thumb">
             <a href="<?php the_permalink(); ?>"><img src="<?php echo $post_img; ?>" alt=""></a>
