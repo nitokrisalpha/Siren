@@ -6,10 +6,7 @@
  *
  * @package Akina
  */
-//function custom_short_excerpt($excerpt){
-//	return substr($excerpt, 0, 120);
-//}
-//add_filter('the_excerpt', 'custom_short_excerpt');
+
 $i=0; while ( have_posts() ) : the_post(); $i++;
 	$class = ($i%2 == 0) ? 'post-list-thumb-left' : ''; // 如果为偶数
 	if(has_post_thumbnail()){
@@ -19,9 +16,7 @@ $i=0; while ( have_posts() ) : the_post(); $i++;
 		$post_img = DEFAULT_FEATURE_IMAGE();
 	}
 	$the_cat = get_the_category();
-// 摘要字数限制
-
-//add_filter( 'excerpt_length', 'custom_excerpt_length', 120 );
+	add_filter( 'excerpt_length', 'custom_excerpt_length', 40 );
 	?>
     <article class="post post-list-thumb <?php echo $class; ?>" itemscope="" itemtype="http://schema.org/BlogPosting">
         <div class="post-thumb">
