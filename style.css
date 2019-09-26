@@ -1398,8 +1398,8 @@ i.iconfont.hotpost {
     -moz-box-shadow: 0 0 10px rgba(16, 9, 13, 0.45);
     box-shadow: 0 0 10px rgba(16, 9, 13, 0.45);
     -webkit-box-shadow: 0 0 10px rgba(16, 9, 13, 0.45);
-    height: 300px;
-    border-width: 0;
+    height: 302px;
+    /*border-width: 0;*/
 }
 
 .post-list-thumb img {
