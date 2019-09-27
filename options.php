@@ -214,8 +214,8 @@ function optionsframework_options() {
 		'name' => __('博主描述', 'options_framework_theme'),
 		'desc' => __('一段自我描述的话', 'options_framework_theme'),
 		'id' => 'admin_des',
-		'std' => '有时间绝望的话，还不如去吃点好吃的去睡觉呢',
-		'type' => 'textarea');	
+		'std' => 'HELLO WORLD',
+		'type' => 'textarea');
 
 	$options[] = array(
 		'name' => __('页脚信息', 'options_framework_theme'),
